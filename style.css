@@ -1,12 +1,19 @@
-body {background-color: black;}
+body {background-color: rgb(0, 0, 0);}
+
 .logo h1 {
     float: left;
     margin: 0;
 }
 
-.logo h2 {
-    float: center;
-    margin: 5;
+.video1  {
+    filter: brightness(65%);
+}
+.absolute {
+    filter: brightness(80%);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .float ul {
@@ -28,7 +35,22 @@ nav {
     box-sizing: border-box;
 }
 
+p {
+    color: white;
+    font-weight: bold;
+    margin-top: 300px;
+    font-size: 4vw;
+}
 
+p1 {
+    color: white;
+    font-size: 2vw;
+}
+
+p2 {
+    color: white;
+    font-size: 1vw;
+}
 
 
 
