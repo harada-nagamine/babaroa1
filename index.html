@@ -1,55 +1,69 @@
-<html>
+<!DOCTYPE html>
+<html lang="ja">
     <head>
-        <title>トップページ
-
-         </title>
+        <meta charset="utf-8">
+        <title>トップページ</title>
          <link rel="stylesheet" href="style.css" type="text/css">
+         <link href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css" rel="stylesheet">
+         <link href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-4/css/4-1-4.css" rel="stylesheet">
     </head>
     
 
     <body>
+        <div id="splash">
+            <div id="splash_logo">
+              <img src="ロゴ1.png" alt="ロゴ" class="fadeUp">
+            </div>
+          </div>
+        
+        
+          <!--==============JQuery読み込み===============-->
+          <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+          <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-4/js/4-1-4.js"></script>
 
-        <!--動画再生-->
         
 
 
         <!--メニューの表示-->
-        <div class="inner float">
+        
 
-            <div class="logo">
-                <h1><img src="ロゴ1.png" alt="rogo" width="65"></h1>
-            </div>
-
-                <nav>
-                    <div class="menu">
-                    <ul class="float">
-                        <li>HOME</li>
-                        <li>サービス紹介</li>
-                        <li>最新情報</li>
-                        <li>お問い合わせ</li>
-                        <li></li>
-                    </ul>
-                    </div>
-                </nav>
-
-            </div>
-        </div>
-
+      <!--
+        <nav>
+                  <div class="menu">
+                  <ul class="float">
+                      <li><a href=""></a>HOME</li>
+                      <li><a href=""></a>サービス紹介</li>
+                      <li><a href=""></a>最新情報</li>
+                      <li><a href=""></a>お問い合わせ</li>
+                      <li><a href=""></a></li>
+                  </ul>
+                  </div>
+              </nav>
+        -->
 
         <!--最初の写真とロゴの重ね-->
         <div style="text-align: center; margin: 0;" >
-
             <!--
                 <img class="img1" src="お菓子作り画像①.png" width="100%" height="80%">
             -->
-            <video class="video1" src="Video/動画①.mp4" autoplay loop muted playsinline width="100%" height="80%"></video>
-            <img class="absolute" src="ロゴ1.png"  width="30%" height="">
+            <video class="video1" src="Video/動画①.mp4" autoplay loop muted playsinline ></video>
+            <img class="absolute" src="ロゴ1.png"  width="30%" height=""><div class="inner float">
+              <div class="logo">
+                <h1>
+                  <a href="file:///C:/Users/2022DSP/Desktop/nagamine/nuxt.Git.Hub.test/babaroa/index.html">
+                  <img src="ロゴ1.png" alt="rogo" width="65" height="65">
+                  </a>
+                </h1>
+              </div>
+          </div>
+      </div>
             
         </div>
 
         <!--タイトルとサブタイトル-->
         <div style="text-align: center; margin: auto;" >
-        <p>~One step closer to fashion~</p>
+        <p class="title">~One step closer to fashion~</p>
         <p1>大人なスイーツレシピ</p1>
         </div>
 
@@ -57,27 +71,143 @@
         <div style="text-align: center; margin: auto;" >
             <br></br>
             <p2>スイーツ一覧</p2>
+            <br></br>
         </div>
         
 
         <!--リストボックス-->
-        <div style="text-align: center; margin: auto;" >
-            <select name="sweets">
-                <option value="orangette">オランジェット</option>
-                <option value="sachertorte">ザッハトルテ</option>
-                <option value="tiramisu">ティラミス</option>
-                <option value="matcha canele">抹茶カヌレ</option>
-                <option value="bavarois">ババロア</option>
-                <option value="warabimochi">わらび餅</option>
-                <option value="cheese tart">チーズタルト</option>
-                <option value="cassata">カッサータ</option>
-                <option value="apple pie">アップルパイ</option>
-                <option value="langue de chat">ラング・ド・シャ</option>
-                <option value="florentine">フロランタン</option>
-                <option value="muffin">マフィン</option>
+        <div class="box" style="text-align: center; margin: auto;" >
+            <select  name="sweets">
+                <option class="box1" value="orangette">オランジェット</option>
+                <option class="box1"value="sachertorte">ザッハトルテ</option>
+                <option class="box1"value="tiramisu">ティラミス</option>
+                <option class="box1"value="matcha canele">抹茶カヌレ</option>
+                <option class="box1"value="bavarois">ババロア</option>
+                <option class="box1"value="warabimochi">わらび餅</option>
+                <option class="box1"value="cheese tart">チーズタルト</option>
+                <option class="box1"value="cassata">カッサータ</option>
+                <option class="box1"value="apple pie">アップルパイ</option>
+                <option class="box1"value="langue de chat">ラング・ド・シャ</option>
+                <option class="box1"value="florentine">フロランタン</option>
+                <option class="box1"value="muffin">マフィン</option>
             </select>
         </div>
 
+        <br></br>
 
+
+
+        <!--スイーツの配列-->
+        <rb></rb>
+        <rb></rb>
+        <rb></rb>
+        <div id="cards">
+            <div class="card">
+              <div class="picture"><img src="film/オランジェット.jpg" alt="" /></div>
+              <div class="description">
+                <p3>
+                  オランジェット
+                </p>
+              </div>
+            </div>
+            <div class="card" id="card-center">
+              <div class="picture"><img src="film/ザッハトルテ.jpeg" alt="" /></div>
+              <div class="description">
+                <p3>
+                  ザッハトルテ
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="picture"><img src="film/ティラミス.png" alt="" /></div>
+              <div class="description">
+                <p3>
+                  ティラミス
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="cards">
+            <div class="card">
+              <div class="picture"><img src="film/抹茶カヌレ.png" alt="" /></div>
+              <div class="description">
+                <p3>
+                  抹茶カヌレ
+                </p>
+              </div>
+            </div>
+            <div class="card" id="card-center">
+              <div class="picture"><img src="film/ババロア.png" alt="" /></div>
+              <div class="description">
+                <p3>
+                    ババロア
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="picture"><img src="film/わらび餅.png" alt="" /></div>
+              <div class="description">
+                <p3>
+                  わらび餅
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="cards">
+            <div class="card">
+              <div class="picture"><img src="film/チーズタルト.png" alt="" /></div>
+              <div class="description">
+                <p3>
+                  チーズタルト
+                </p>
+              </div>
+            </div>
+            <div class="card" id="card-center">
+              <div class="picture"><img src="film/カッサータ.png" alt="" /></div>
+              <div class="description">
+                <p3>
+                  カッサータ
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="picture"><img src="film/アップルパイ.png" alt="" /></div>
+              <div class="description">
+                <p3>
+                  アップルパイ
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="cards">
+            <div class="card">
+              <div class="picture"><img src="film/ラングドシャ2.png" alt="" /></div>
+              <div class="description">
+                <p3>
+                  ラング・ド・シャ
+                </p>
+              </div>
+            </div>
+            <div class="card" id="card-center">
+              <div class="picture"><img src="film/フロランタン.png" alt="" /></div>
+              <div class="description">
+                <p3>
+                  フロランタン
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="picture"><img src="film/マフィン.png" alt="" /></div>
+              <div class="description">
+                <p3>
+                  マフィン
+                </p>
+              </div>
+            </div>
+          </div>
     </body>
 </html>

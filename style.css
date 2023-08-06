@@ -1,19 +1,26 @@
 body {background-color: rgb(0, 0, 0);}
 
 .logo h1 {
-    float: left;
-    margin: 0;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    transform: translate(-0%, 0%);
 }
 
 .video1  {
     filter: brightness(65%);
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    right:0;
+    left:0;
+    bottom:0;
 }
 .absolute {
     filter: brightness(80%);
     position: absolute;
-    top: 90%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 130%);
 }
 
 .float ul {
@@ -24,7 +31,8 @@ body {background-color: rgb(0, 0, 0);}
 .float li {
     display: inline-block;
     list-style: none;
-    padding: 10px;
+    padding-top: 25px;
+    padding-left: 10px;
 
 }
 
@@ -35,7 +43,7 @@ nav {
     box-sizing: border-box;
 }
 
-p {
+.title {
     color: white;
     font-weight: bold;
     margin-top: 300px;
@@ -49,13 +57,111 @@ p1 {
 
 p2 {
     color: white;
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 
+p3 {
+  color: #fff;
+  font-size: 1.5vw;
+}
+
+
+.box {
+  color: #fff;
+}
+
+.box1 {
+  color: black;
+}
 
 
 a {
     display: block;
     text-decoration: none;
     color: white;
+}
+
+#cards {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 300px;
+    height: 315px;
+    border: 1px solid rgb(0, 0, 0);
+  }
+  
+  .card:nth-child(2) {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  
+  .picture img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+  }
+  
+  .description {
+    width: 100%;
+    height: 145px;
+    padding-right: 12px;
+    padding-left: 12px;
+    box-sizing: border-box;
+  }
+  
+  .description p {
+    font-size: 13px;
+    color: dimgray;
+  }
+
+
+
+/*========= LoadingのためのCSS ===============*/
+
+/* Loading背景画面設定　*/
+#splash {
+    /*fixedで全面に固定*/
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background:#333;
+  text-align:center;
+  color:#fff;
+}
+
+/* Loading画像中央配置　*/
+#splash_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Loading アイコンの大きさ設定　*/
+#splash_logo img {
+  width:260px;
+}
+
+/* fadeUpをするアイコンの動き */
+
+.fadeUp{
+animation-name: fadeUpAnime;
+animation-duration:0.5s;
+animation-fill-mode:forwards;
+opacity: 0;
+}
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+  transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
 }
