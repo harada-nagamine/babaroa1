@@ -20,7 +20,7 @@ body {background-color: rgb(0, 0, 0);}
     filter: brightness(80%);
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 130%);
+    transform: translate(-50%, 135%);
 }
 
 .float ul {
