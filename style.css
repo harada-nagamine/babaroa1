@@ -171,3 +171,16 @@ opacity: 0;
   }
 }
 
+
+.Page1 {
+  margin-top: 20%;
+  width: 50%;
+  filter: brightness(80%);
+}
+
+.Subtitle {
+  font-family: "Hannari";
+  padding-top: 10%;
+  color: #fff;
+  font-size: 500%;
+}
