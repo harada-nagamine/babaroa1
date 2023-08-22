@@ -192,10 +192,18 @@ opacity: 0;
 }
 
 .Time{
-  font-size: 240%;
+  font-size: 280%;
   width: 49%;
   color: #fff;
   margin: 5% 0 0 20%;
+  padding: 0;
+}
+
+.Time1{
+  font-size: 240%;
+  width: 49%;
+  color: #fff;
+  margin: -25% 0 0 77.5%;
   padding: 0;
 }
 
