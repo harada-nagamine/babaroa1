@@ -9,6 +9,7 @@ body {background-color: rgb(0, 0, 0);}
 }
 
 .video1  {
+    
     filter: brightness(65%);
     width: 100%;
     z-index: -1;
@@ -19,9 +20,12 @@ body {background-color: rgb(0, 0, 0);}
 }
 .absolute {
     filter: brightness(80%);
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 135%);
+    /*position: absolute;*/
+  
+    
+    /*top: 50%;*/
+    transform: translate(0%, -50%);
+    /*transform: translate(-50%, 135%);*/
 }
 
 .float ul {
@@ -45,10 +49,11 @@ nav {
 }
 
 .title {
+    font-family: 'Cormorant', serif;
     color: white;
     font-weight: bold;
-    margin-top: 300px;
-    font-size: 4vw;
+    /*margin-top: 300px;*/
+    font-size: 8vw;
 }
 
 p1 {
@@ -192,6 +197,14 @@ opacity: 0;
   font-size: 500%;
 }
 
+.Subtitle1 {
+  font-family: "Hannari";
+  padding-top: 10%;
+  color: #fff;
+  font-size: 1.5vw;
+}
+
+
 .Time{
   font-size: 280%;
   width: 49%;
@@ -244,13 +257,13 @@ opacity: 0;
     .custom-select-trigger {
       position: relative;
       display: block;
-      width: 130px;
+      width: 300px;
       padding: 0 84px 0 22px;
       font-size: 22px;
       font-weight: 300;
       color: #fff;
-      line-height: 60px;
-      background: #5c9cd8;
+      line-height: 40px;
+      background: #505050;
       border-radius: 4px;
       cursor: pointer;
     }
@@ -330,3 +343,9 @@ opacity: 0;
       border-bottom: 0;
       border-radius: 0 0 4px 4px;
     }
+
+    .kensaku{
+      color: #fff;
+    }
+
+    

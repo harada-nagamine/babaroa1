@@ -39,4 +39,13 @@ $(window).on('load',function(){
     $(this).parents(".custom-select").removeClass("opened");
     $(this).parents(".custom-select").find(".custom-select-trigger").text($(this).text());
   });
+
+  function button_click()
+  {
+    var select_value;
+    select_value = document.getElementById("select_sources").value;
+    var page_select;
+    page_select = select_value + ".html";
+    document.location.replace(page_select);
+  }
   

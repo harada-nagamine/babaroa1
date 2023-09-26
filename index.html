@@ -9,6 +9,7 @@
     </head>
     
 
+    
     <body>
         <div id="splash">
             <div id="splash_logo">
@@ -46,9 +47,10 @@
         <div style="text-align: center; margin: 0;" >
             <!--
                 <img class="img1" src="お菓子作り画像①.png" width="100%" height="80%">
+                width="575" height="575"
             -->
             <video class="video1" src="Video/動画①.mp4" autoplay loop muted playsinline ></video>
-            <img class="absolute" src="Picture/ロゴ1.png"  width="30%" height=""><div class="inner float">
+            <img class="absolute" src="Picture/ロゴ1.png"  width="575" height="575"><div class="inner float">
               <div class="logo">
                 <h1>
                   <a href="index.html">
@@ -62,6 +64,9 @@
         </div>
 
         <!--タイトルとサブタイトル-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300&display=swap" rel="stylesheet">
         <div style="text-align: center; margin: auto;" >
         <p class="title">~One step closer to fashion~</p>
         <p1>大人なスイーツレシピ</p1>
@@ -73,28 +78,34 @@
             <p2>スイーツ一覧</p2>
             <br></br>
         </div>
+
+        
         
 
         <!--リストボックス-->
         <div class="center" style="text-align: center; margin: auto;">
-          <select name="sources" id="sources" class="custom-select sources" placeholder="Source Type">
+          <select name="sources" id="select_sources" class="custom-select sources" placeholder="スイーツ名">
+            
+
             <!--<option value="profile">Profile</option>
             <option value="word">Word</option>
             <option value="hashtag">Hashtag</option>-->
 
-            <option value="orangette">オランジェット</option>
-            <option value="sachertorte">ザッハトルテ</option>
-            <option value="tiramisu">ティラミス</option>
-            <option value="matcha canele">抹茶カヌレ</option>
-            <option value="bavarois">ババロア</option>
-            <option value="warabimochi">わらび餅</option>
-            <option value="cheese tart">チーズタルト</option>
-            <option value="cassata">カッサータ</option>
-            <option value="apple pie">アップルパイ</option>
-            <option value="langue de chat">ラング・ド・シャ</option>
-            <option value="florentine">フロランタン</option>
-            <option value="muffin">マフィン</option>
+            <option value="Orangette">オランジェット</option>
+            <option value="Sachertorte">ザッハトルテ</option>
+            <option value="Tiramisu">ティラミス</option>
+            <option value="Matcha canele">抹茶カヌレ</option>
+            <option value="Bavarois">ババロア</option>
+            <option value="Warabimochi">わらび餅</option>
+            <option value="Cheese tart">チーズタルト</option>
+            <option value="Cassata">カッサータ</option>
+            <option value="Apple pie">アップルパイ</option>
+            <option value="Langue de chat">ラング・ド・シャ</option>
+            <option value="Florentine">フロランタン</option>
+            <option value="Muffin">マフィン</option>
           </select>
+
+          <input type="submit" name="submit" value="検索" class="kensaku" onclick="button_click()">
         </div>
 
 
@@ -123,6 +134,7 @@
 
 
         <!--スイーツの配列-->
+        <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet" />
         <rb></rb>
         <rb></rb>
         <rb></rb>
@@ -133,7 +145,7 @@
                     <img src="Picture/オランジェット.jpg" alt="" /></div>
                 </a>
               <div class="description">
-                <p3>
+                <p3 class="Subtitle1">
                   オランジェット
                 </p>
               </div>
@@ -144,7 +156,7 @@
                   <img src="Picture/ザッハトルテ.jpeg" alt="" /></div>
                 </a>
               <div class="description">
-                <p3>
+                <p3 class="Subtitle1">
                   ザッハトルテ
                 </p>
               </div>
@@ -155,7 +167,7 @@
                   <img src="Picture/ティラミス.png" alt="" /></div>
                 </a>
               <div class="description">
-                <p3>
+                <p3 class="Subtitle1">
                   ティラミス
                 </p>
               </div>
@@ -169,7 +181,7 @@
                   <img src="Picture/抹茶カヌレ.png" alt="" /></div>
                 </a>
               <div class="description">
-                <p3>
+                <p3 class="Subtitle1">
                   抹茶カヌレ
                 </p>
               </div>
@@ -180,7 +192,7 @@
                   <img src="Picture/ババロア.png" alt="" /></div>
                 </a>
               <div class="description">
-                <p3>
+                <p3 class="Subtitle1">
                     ババロア
                 </p>
               </div>
@@ -191,7 +203,7 @@
                   <img src="Picture/わらび餅.png" alt="" /></div>
                 </a>
               <div class="description">
-                <p3>
+                <p3 class="Subtitle1">
                   わらび餅
                 </p>
               </div>
@@ -205,7 +217,7 @@
                   <img src="Picture/チーズタルト.png" alt="" /></div>
                 </a>
               <div class="description">
-                <p3>
+                <p3 class="Subtitle1">
                   チーズタルト
                 </p>
               </div>
@@ -216,7 +228,7 @@
                   <img src="Picture/カッサータ.png" alt="" /></div>
                 </a>
               <div class="description">
-                <p3>
+                <p3 class="Subtitle1">
                   カッサータ
                 </p>
               </div>
@@ -227,7 +239,7 @@
                   <img src="Picture/アップルパイ.png" alt="" /></div>
                 </a>
               <div class="description">
-                <p3>
+                <p3 class="Subtitle1">
                   アップルパイ
                 </p>
               </div>
@@ -242,7 +254,7 @@
                   <img src="Picture/ラングドシャ.png" alt="" /></div>
                 </a>
               <div class="description">
-                <p3>
+                <p3 class="Subtitle1">
                   ラング・ド・シャ
                 </p>
               </div>
@@ -253,7 +265,7 @@
                   <img src="Picture/フロランタン.png" alt="" /></div>
                 </a>
               <div class="description">
-                <p3>
+                <p3 class="Subtitle1">
                   フロランタン
                 </p>
               </div>
@@ -264,7 +276,7 @@
                   <img src="Picture/マフィン.png" alt="" /></div>
                 </a>
               <div class="description">
-                <p3>
+                <p3 class="Subtitle1">
                   マフィン
                 </p>
               </div>
