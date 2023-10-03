@@ -8,8 +8,9 @@ body {background-color: rgb(0, 0, 0);}
     transform: translate(-0%, 0%);
 }
 
-.video1  {
-    
+
+/*トップページの動画*/
+.video1  {    
     filter: brightness(65%);
     width: 100%;
     z-index: -1;
@@ -92,6 +93,8 @@ a {
     color: white;
 }
 
+
+/*トップページの写真の配列*/
 #cards {
     display: flex;
     justify-content: center;

@@ -23,6 +23,10 @@ var c = 0;
     })
   })
   */
+
+
+
+//トップページの動画切り替え
  var interval;
  var c = 0;
 function video_loop()
@@ -36,9 +40,10 @@ function video_loop()
     console.log(c);
     switch (c){
         case 0:
-            loop();
+            //loop();
             c++;
             break;
+            
         case 1:
             returnValue = video.ended;
             console.log(returnValue);
@@ -46,34 +51,29 @@ function video_loop()
                 video.src = movie_url;
                 video.load();
                 video.play();
-                c++;
               })
             break;
+            c++;
             case 2:
             returnValue = video.ended;
             video.addEventListener('ended', function() {
                 video.src = movie_url1;
                 video.load();
                 video.play();
-                c--;
               })
             break;
-
+            c--;
     }
-
-
-
-
 }
 loop();
+
+
 
 function loop()
 {
     clearInterval(interval);
     interval = setInterval(video_loop,17);
 }
-
-
 
   /*(function() {
     "use strict";
