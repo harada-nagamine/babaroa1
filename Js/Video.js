@@ -27,7 +27,7 @@ var c = 0;
 
 
 //トップページの動画切り替え
- var interval;
+/* var interval;
  var c = 0;
 function video_loop()
 {
@@ -91,7 +91,22 @@ function loop()
 
 
 
+
+
+$(document).ready(function(){
+  $('.single-item').slick({
+    setting: setting-value
+  });
+});
+
+
+$('.autoplay').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
   
-  
+
 
 

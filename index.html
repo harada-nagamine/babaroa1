@@ -3,9 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>スイーツレシピサイト</title>
-         <link rel="stylesheet" href="style.css" type="text/css">
-         <link href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css" rel="stylesheet">
-         <link href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-4/css/4-1-4.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css" rel="stylesheet">
+        <link href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-4/css/4-1-4.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     
 
@@ -49,7 +51,14 @@
                 <img class="img1" src="お菓子作り画像①.png" width="100%" height="80%">
                 width="575" height="575"
             -->
-            <video id="video" class="video1" src="Video/動画①.mp4" autoplay  muted playsinline ></video>
+
+            <div class="your-class">
+              <div><video id="video" class="video1" src="Video/動画①.mp4" autoplay loop muted playsinline></video> </div>
+              <div><video id="video" class="video1" src="Video/cookie動画.mp4" autoplay loop muted playsinline></video></div>
+            </div>
+
+
+            <!--<video id="video" class="video1" src="Video/動画①.mp4" autoplay  muted playsinline ></video>-->
             <img class="absolute" src="Picture/ロゴ1.png"  width="575" height="575"><div class="inner float">
               <div class="logo">
                 <h1>
@@ -59,7 +68,7 @@
                 </h1>
               </div>
           </div>
-      </div>
+        </div>
             
         </div>
 
@@ -286,7 +295,23 @@
             </div>
           </div>
 
+        
+
           <script src="Js/main.js"></script>
           <script src="Js/Video.js"></script>
-    </body>
+          <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+          <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+          <script>        
+              $(document).ready(function(){
+              $('.your-class').slick({
+                  autoplay: true,
+                  autoplaySpeed: 5000,
+                  fade: true,
+              });
+              });
+          </script>
+
+
+        </body>
 </html>
