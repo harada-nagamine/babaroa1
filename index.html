@@ -46,28 +46,23 @@
         -->
 
         <!--最初の写真とロゴの重ね-->
-        <div style="text-align: center; margin: 0;" >
-            <!--
-                <img class="img1" src="お菓子作り画像①.png" width="100%" height="80%">
-                width="575" height="575"
-            -->
-
-            <div class="your-class">
-              <div><video id="video" class="video1" src="Video/動画①.mp4" autoplay loop muted playsinline></video> </div>
-              <div><video id="video" class="video1" src="Video/cookie動画.mp4" autoplay loop muted playsinline></video></div>
-            </div>
-
-
-            <!--<video id="video" class="video1" src="Video/動画①.mp4" autoplay  muted playsinline ></video>-->
-            <img class="absolute" src="Picture/ロゴ1.png"  width="575" height="575"><div class="inner float">
-              <div class="logo">
-                <h1>
-                  <a href="index.html">
-                  <img src="Picture/ロゴ1.png" alt="rogo" width="65" height="65">
-                  </a>
-                </h1>
+        <div class="relative">
+              <div class="your-class">
+                  <div><video id="video" class="video1" src="Video/動画①.mp4" autoplay loop muted playsinline></video> </div>
+                  <div><video id="video" class="video1" src="Video/cookie動画.mp4" autoplay loop muted playsinline></video></div>
+                  <div><video id="video" class="video1" src="Video/sasikomi.mp4" autoplay loop muted playsinline></video></div>
               </div>
-          </div>
+
+              <img class="absolute" src="Picture/ロゴ1.png">
+                <div class="inner float">
+                  <div class="logo">
+                    <h1>
+                      <a href="index.html">
+                      <img src="Picture/ロゴ1.png" alt="rogo" width="65" height="65">
+                      </a>
+                    </h1>
+                  </div>
+                </div>
         </div>
             
         </div>
@@ -80,6 +75,62 @@
         <p class="title">~One step closer to fashion~</p>
         <p1>大人なスイーツレシピ</p1>
         </div>
+        <br></br>
+        <br></br>
+        <br></br>
+
+
+        <!--おすすめスイーツ-->
+        <p4>おすすめスイーツ</p>
+        <div class="slider-for">
+          <div>
+            <div class="slide-item__wrapper1">
+              <img class="png_1" src="Picture/どら焼き画像.png"  style="margin: 0 auto;">
+            </div>
+          </div>
+          <div>
+            <div class="slide-item__wrapper1">
+              <img class="png_1" src="Picture/おはぎ画像.png"  style="margin: 0 auto;">
+            </div>
+          </div>
+          <div>
+            <div class="slide-item__wrapper1">
+              <img class="png_1" src="Picture/わらび餅.png"  style="margin: 0 auto;">
+            </div>
+          </div>
+          <div>
+            <div class="slide-item__wrapper1">
+              <img class="png_1" src="Picture/アップルパイ.png"  style="margin: 0 auto;">
+            </div>
+          </div>
+          <div>
+            <div class="slide-item__wrapper1">
+              <img class="png_1" src="Picture/カッサータ.png"  style="margin: 0 auto;">
+            </div>
+          </div>
+          <div>
+            <div class="slide-item__wrapper1">
+              <img class="png_1" src="Picture/チーズタルト.png"  style="margin: 0 auto;">
+            </div>
+          </div>
+          <div>
+            <div class="slide-item__wrapper1">
+              <img class="png_1" src="Picture/抹茶カヌレ.png"  style="margin: 0 auto;">
+            </div>
+          </div>
+      </div>
+
+      <br></br>
+      <div class="slider-nav">
+          <div><img class="png_2" src="Picture/どら焼き画像.png"><p6>どら焼き</p6></div>
+          <div><img class="png_2" src="Picture/おはぎ画像.png"><p6>おはぎ</p6></div>
+          <div><img class="png_2" src="Picture/わらび餅.png"><p6>わらび餅</p6></div>
+          <div><img class="png_2" src="Picture/アップルパイ.png"><p6>アップルパイ</p6></div>
+          <div><img class="png_2" src="Picture/カッサータ.png"><p6>カッサータ</p6></div>
+          <div><img class="png_2" src="Picture/チーズタルト.png"><p6>チーズタルト</p6></div>
+          <div><img class="png_2" src="Picture/抹茶カヌレ.png"><p6>抹茶カヌレ</p6></div>
+      </div>
+      
 
         <!--スイーツ一覧テキスト-->
         <div style="text-align: center; margin: auto;" >
@@ -88,18 +139,9 @@
             <br></br>
         </div>
 
-        
-        
-
         <!--リストボックス-->
         <div class="center" style="text-align: center; margin: auto;">
           <select name="sources" id="select_sources" class="custom-select sources" placeholder="スイーツ名">
-            
-
-            <!--<option value="profile">Profile</option>
-            <option value="word">Word</option>
-            <option value="hashtag">Hashtag</option>-->
-
             <option value="Orangette">オランジェット</option>
             <option value="Sachertorte">ザッハトルテ</option>
             <option value="Tiramisu">ティラミス</option>
@@ -113,34 +155,10 @@
             <option value="Florentine">フロランタン</option>
             <option value="Muffin">マフィン</option>
           </select>
-          
-
 
           <!--検索ボタン-->
           <input type="submit" name="submit" value="検索" class="kensaku" onclick="button_click()">
         </div>
-
-
-          <!--<div class="box" style="text-align: center; margin: auto;" >
-              <select  class="listbox" name="sweets">
-                  <option class="box1" value="orangette">オランジェット</option>
-                  <option class="box1"value="sachertorte">ザッハトルテ</option>
-                  <option class="box1"value="tiramisu">ティラミス</option>
-                  <option class="box1"value="matcha canele">抹茶カヌレ</option>
-                  <option class="box1"value="bavarois">ババロア</option>
-                  <option class="box1"value="warabimochi">わらび餅</option>
-                  <option class="box1"value="cheese tart">チーズタルト</option>
-                  <option class="box1"value="cassata">カッサータ</option>
-                  <option class="box1"value="apple pie">アップルパイ</option>
-                  <option class="box1"value="langue de chat">ラング・ド・シャ</option>
-                  <option class="box1"value="florentine">フロランタン</option>
-                  <option class="box1"value="muffin">マフィン</option>
-              </select>
-
-              <button type="submit">検索</button>
-
-          </div>-->
-
         <br></br>
 
 
@@ -159,6 +177,7 @@
               <div class="description">
                 <p3 class="Subtitle1">
                   オランジェット
+                  <p5>(4min)</p5>
                 </p>
               </div>
             </div>
@@ -304,11 +323,29 @@
           <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
           <script>        
               $(document).ready(function(){
-              $('.your-class').slick({
-                  autoplay: true,
-                  autoplaySpeed: 5000,
-                  fade: true,
-              });
+                $('.your-class').slick({
+                    autoplay: true,
+                    autoplaySpeed: 5000,
+                    fade: true,
+                });
+
+                $('.slider-for').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    fade: true,
+                    asNavFor: '.slider-nav'
+                });
+                $('.slider-nav').slick({
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    asNavFor: '.slider-for',
+                    dots: true,
+                    centerMode: true,
+                    focusOnSelect: true
+                });
               });
           </script>
 

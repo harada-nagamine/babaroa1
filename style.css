@@ -10,26 +10,30 @@ body {background-color: rgb(0, 0, 0);}
 
 
 /*トップページの動画*/
-.video1  {    
+.video1{    
+    position: relative;
     filter: brightness(65%);
     z-index: -1;
-    height: 100vh;
-    top: 0;
+    width: 100%;
     right:0;
     left:0;
     bottom:0;
 }
-.absolute {
-    
-   opacity: 1;
-    /*position: absolute;*/
-  
-    
-    /*top: 5%;*/
-    /*transform: translate(0%, -120%);*/
-    transform: translate(0%, -75vh);
+
+/*動画とロゴの重ね*/
+.relative{
+  position: relative;
 }
 
+.absolute{
+  position: absolute;
+  width: 30%;
+  opacity: 1;
+  top: 0vh;
+  transform: translate(120%, 20%);
+}
+
+/*左上のロゴの設置*/
 .float ul {
     display: inline-block;
     
@@ -50,6 +54,7 @@ nav {
     box-sizing: border-box;
 }
 
+/*タイトルの設定*/
 .title {
     font-family: 'Cormorant', serif;
     color: white;
@@ -58,6 +63,7 @@ nav {
     font-size: 8vw;
 }
 
+/*テキストの設定*/
 p1 {
     color: white;
     font-size: 2vw;
@@ -73,18 +79,18 @@ p3 {
   font-size: 1.5vw;
 }
 
-
-.box {
+p4{
   color: #fff;
+  font-size: 2.5vw;
 }
-
-.listbox {
-  border: rgb(255, 255, 255) 2px solid;
+p5{
+  font-family: 'Cormorant', serif;
+  font-size: 1.2vw;
 }
-
-.box1 {
-  color: black;
-  
+p6{
+  font-family: "Hannari";
+  color: #fff;
+  font-size: 2.5vw;
 }
 
 
@@ -136,8 +142,6 @@ a {
     font-size: 13px;
     color: dimgray;
   }
-
-
 
 /*========= LoadingのためのCSS ===============*/
 
@@ -348,8 +352,20 @@ opacity: 0;
       border-radius: 0 0 4px 4px;
     }
 
+    /*検索ボタンのフォント*/
     .kensaku{
       color: #fff;
     }
 
+    /*おすすめスイーツの画像サイズ*/
+    .png_1 {
+      border-radius: 16px;
+      width: 50%;
+    }
+    .png_2 {
+      border-radius: 16px;
+      height: 40%;
+      width: 80%;
+    }
+    
     

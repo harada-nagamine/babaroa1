@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8">
-    <title>スイーツレシピサイト</title>
+    <title>テストサイト</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css" rel="stylesheet">
     <link href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-4/css/4-1-4.css" rel="stylesheet">
@@ -11,28 +11,20 @@
 
   <style>
     #div1 {
-      border: solid 2px blue;
       height: 100vh;
     }
   </style>
   
 </head>
 <body>
-    <div  id = "div1">
-        <div style="text-align: center; margin: 0;" >
-            <!--
-                <img class="img1" src="お菓子作り画像①.png" width="100%" height="80%">
-                width="575" height="575"
-            -->
-
+        <div class="relative">
             <div class="your-class">
             <div><video id="video" class="video1" src="Video/動画①.mp4" autoplay loop muted playsinline></video> </div>
             <div><video id="video" class="video1" src="Video/cookie動画.mp4" autoplay loop muted playsinline></video></div>
+            <div><video id="video" class="video1" src="Video/sasikomi.mp4" autoplay loop muted playsinline></video></div>
             </div>
 
-
-            <!--<video id="video" class="video1" src="Video/動画①.mp4" autoplay  muted playsinline ></video>-->
-            <img class="absolute" src="Picture/ロゴ1.png"  width="550" height="550">
+            <img class="absolute" src="Picture/ロゴ1.png" style="text-align: center;">
             <div class="inner float">
                 <div class="logo">
                      <h1>
@@ -43,9 +35,8 @@
                 </div>
             </div>
         </div>
+        <br></br>
             
-    
-
         <!--タイトルとサブタイトル-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,7 +45,67 @@
             <p class="title">~One step closer to fashion~</p>
             <p1>大人なスイーツレシピ</p1>
         </div>
-    </div>
+        <br></br>
+        <br></br>
+        <br></br>
+
+        <!--おすすめスイーツ-->
+        <p4>おすすめスイーツ</p>
+            <div class="slider-for">
+              <div>
+                <div class="slide-item__wrapper2" style="display: flex;">
+                    <div class="slide-item__img" style="flex: 0 0 50%;"><img style="width: 100%;" class="png_1" src="Picture/どら焼き画像.png"></div>
+                    <div class="slide-item__text">どら焼き　製作時間　30分</div>
+                  </div>
+              </div>
+              <div>
+                <div class="slide-item__wrapper2" style="display: flex;">
+                  <div class="slide-item__img" style="flex: 0 0 50%;"><img style="width: 100%;" class="png_1" src="Picture/おはぎ画像.png"></div>
+                  <div class="slide-item__text">おはぎ　製作時間　30分</div>
+                </div>
+              </div>
+              <div>
+                <div class="slide-item__wrapper2" style="display: flex;">
+                    <div class="slide-item__img" style="flex: 0 0 50%;"><img style="width: 100%;" class="png_1" src="Picture/わらび餅.png"></div>
+                    <div class="slide-item__text">わらび餅　製作時間　30分</div>
+                </div>
+              </div>
+              <div>
+                <div class="slide-item__wrapper2" style="display: flex;">
+                    <div class="slide-item__img" style="flex: 0 0 50%;"><img style="width: 100%;" class="png_1" src="Picture/アップルパイ.png"></div>
+                    <div class="slide-item__text">アップルパイ　製作時間　30分</div>
+                </div>
+              </div>
+              <div>
+                <div class="slide-item__wrapper2" style="display: flex;">
+                    <div class="slide-item__img" style="flex: 0 0 50%;"><img style="width: 100%;" class="png_1" src="Picture/カッサータ.png"></div>
+                    <div class="slide-item__text">カッサータ　製作時間　30分</div>
+                </div>
+              </div>
+              <div>
+                <div class="slide-item__wrapper2" style="display: flex;">
+                    <div class="slide-item__img" style="flex: 0 0 50%;"><img style="width: 100%;" class="png_1" src="Picture/チーズタルト.png"></div>
+                    <div class="slide-item__text">チーズタルト　製作時間　30分</div>
+                </div>
+              </div>
+              <div>
+                <div class="slide-item__wrapper2" style="display: flex;">
+                    <div class="slide-item__img" style="flex: 0 0 50%;"><img style="width: 100%;" class="png_1" src="Picture/抹茶カヌレ.png"></div>
+                    <div class="slide-item__text">抹茶カヌレ　製作時間　30分</div>
+                </div>
+              </div>
+          </div>
+
+        <br></br>
+        <div class="slider-nav">
+            <div><img class="png_2" src="Picture/どら焼き画像.png"></div>
+            <div><img class="png_2" src="Picture/おはぎ画像.png"></div>
+            <div><img class="png_2" src="Picture/わらび餅.png"></div>
+            <div><img class="png_2" src="Picture/アップルパイ.png"></div>
+            <div><img class="png_2" src="Picture/カッサータ.png"></div>
+            <div><img class="png_2" src="Picture/チーズタルト.png"></div>
+            <div><img class="png_2" src="Picture/抹茶カヌレ.png"></div>
+        </div>
 
     <script src="Js/main.js"></script>
           <script src="Js/Video.js"></script>
@@ -68,6 +119,25 @@
                   autoplaySpeed: 5000,
                   fade: true,
               });
+
+              $('.slider-for').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    fade: true,
+                    asNavFor: '.slider-nav'
+                });
+                $('.slider-nav').slick({
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    asNavFor: '.slider-for',
+                    dots: true,
+                    centerMode: true,
+                    focusOnSelect: true
+                });
+                    
               });
           </script>
 </body>
