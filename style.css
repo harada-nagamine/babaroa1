@@ -63,37 +63,6 @@ nav {
     font-size: 8vw;
 }
 
-/*テキストの設定*/
-p1 {
-    color: white;
-    font-size: 2vw;
-}
-
-p2 {
-    color: white;
-    font-size: 1.2vw;
-}
-
-p3 {
-  color: #fff;
-  font-size: 1.5vw;
-}
-
-p4{
-  color: #fff;
-  font-size: 2.5vw;
-}
-p5{
-  font-family: 'Cormorant', serif;
-  font-size: 1.2vw;
-}
-p6{
-  font-family: "Hannari";
-  color: #fff;
-  font-size: 2.5vw;
-}
-
-
 a {
     display: block;
     text-decoration: none;
@@ -420,4 +389,8 @@ opacity: 0;
     .description_1 p {
       font-size: 13px;
       color: dimgray;
+    }
+
+    .slide-item__text{
+      font-family: "Hannari";
     }
