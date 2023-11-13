@@ -171,7 +171,7 @@
         </div>
 
         <!--リストボックス-->
-        <div class="center" style="text-align: center; margin: auto;">
+        <!--
           <select name="sources" id="select_sources" class="custom-select sources" placeholder="スイーツ名">
             <option value="Orangette">オランジェット</option>
             <option value="Sachertorte">ザッハトルテ</option>
@@ -186,13 +186,24 @@
             <option value="Florentine">フロランタン</option>
             <option value="Muffin">マフィン</option>
           </select>
+        -->
+        
+        <style>
+          input, select, textarea {
+          color: #ffffff;
+          }
+        </style>
 
-          <!--検索ボタン-->
-          <input type="submit" name="submit" value="検索" class="kensaku" onclick="button_click()">
-        </div>
+
+          <form  method="get" action=".html" noindex>
+          <div class="center" style="text-align: center; margin: auto;">
+            <p><input type="search" name="sources" size="30" maxlength="30" placeholder="キーワードを入力"  ></p>
+            <!--検索ボタン-->
+            <input type="submit" name="submit" value="検索">
+          </div>
+        </form>
+        
         <br></br>
-
-
 
         <!--スイーツの配列-->
       <div> 
@@ -221,7 +232,7 @@
         <div class="card_1">
           <div class="picture_1"><img src="Picture/tyoko_2.png" alt="" /></div>
           <div class="description_1">
-            <p>
+            <p2>
               チョコレート
             </p>
           </div>
@@ -229,7 +240,7 @@
         <div class="card_1" id="card-center">
           <div class="picture_1"><img src="Picture/kake_1.png" alt="" /></div>
           <div class="description_1">
-            <p>
+            <p2>
               ケーキ
             </p>
           </div>
@@ -237,7 +248,7 @@
         <div class="card_1">
           <div class="picture_1"><img src="Picture/talto_1.png" alt="" /></div>
           <div class="description_1">
-            <p>
+            <p2>
               タルト
             </p>
           </div>
@@ -245,7 +256,7 @@
         <div class="card_1">
           <div class="picture_1"><img src="Picture/yakigasi.png" alt="" /></div>
           <div class="description_1">
-            <p>
+            <p2>
               焼き菓子
             </p>
           </div>
@@ -256,7 +267,7 @@
         <div class="card_1">
           <div class="picture_1"><img src="Picture/bisket.png" alt="" /></div>
           <div class="description_1">
-            <p>
+            <p2>
               ビスケット
             </p>
           </div>
@@ -264,7 +275,7 @@
         <div class="card_1" id="card-center">
           <div class="picture_1"><img src="Picture/wafful.png" alt="" /></div>
           <div class="description_1">
-            <p>
+            <p2>
               ワッフル
             </p>
           </div>
@@ -272,7 +283,7 @@
         <div class="card_1">
           <div class="picture_1"><img src="Picture/donatsu.png" alt="" /></div>
           <div class="description_1">
-            <p>
+            <p2>
               ドーナツ
             </p>
           </div>
@@ -280,7 +291,7 @@
         <div class="card_1">
           <div class="picture_1"><img src="Picture/purin.png" alt="" /></div>
           <div class="description_1">
-            <p>
+            <p2>
               プリン
             </p>
           </div>
